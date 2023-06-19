@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+@font-face {
+    font-family: "LGSmHaR";
+    src: url("../fonts/LGSmHaR.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+a{
+    all: unset;
+    display: inline-block;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+body{ 
+    margin: 0;
+}
+.inner{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+.inner_fullscreen{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    font-family: 'Nanum Gothic';
+
+}
+.headline{
+    font-family: 'Gugi';
+    font-size: 5rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+.background{
+    height: 100vh;
+    z-index: 1;
+    background-size: cover;
+    background-position: center 50%;
+}
+
+/* nav */
+nav{
+    background-color: rgba(0,0,0, 0.4);
+    color:white;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+    text-shadow: 1px 1px 5px #000;
+
+}
+.nav_things{
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 3rem;
+}
+#mainIcon a:hover{
+    cursor: pointer;
+    color: hsl(193, 100%, 75%);
+}
+#introduceIcon a:hover{
+    cursor: pointer;
+    color: hsl(174, 100%, 75%);
+}
+#hobbyIcon a:hover{
+    cursor: pointer;
+    color: hsl(281, 100%, 75%);
+}
+#skillIcon a:hover{
+    cursor: pointer;
+    color: hsl(62, 100%, 75%);
+}
+
+/* Main */
+#main{
+    background-image: url(../img/25150033.JPG);
+    font-family: "LGSmHaR";
+}
+#main-container{
+    background-color: rgba(82, 202, 235, 0.4);
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+#title-container{
+    padding-top: 10vh;
+    padding-left: 6vw;
+    animation: fadeInUp 1s;
+    color: white;
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+#title{
+    font-size: 9vw;
+    padding-bottom: 2vw;
+}
+#messeage{
+    font-size: 5.5vw;
+}
+
+/* introduce */
+#introduce{
+    background-image: url(../img/25150002.JPG);
+}
+#introduce_container{
+    background-color: rgba(83, 200, 188, 0.3);
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    text-shadow: 8px 8px 8px #000;
+}
+#my_container{
+    background-color: rgba(83, 200, 188, 0.3);
+    padding: 30px;
+    color: white;
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+.itaeu{
+    display: flex;
+    justify-content: space-between;
+}
+.comment{
+    padding-bottom: 2rem;
+}
+#map_center{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.mylink{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 3rem;
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+#myYT a:hover{
+    cursor: pointer;
+    color: #F00;
+}
+#myTW a:hover{
+    cursor: pointer;
+    color: #1DA1F2;
+}
+#myMAIL a:hover{
+    cursor: pointer;
+    color: #2DB400;
+}
+
+/* hobby */
+#hobby{
+    background-image: url(../img/TECHNIKA.jpg);
+}
+#hobby_container{
+    background-color: rgba(189, 89, 235, 0.3);
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    text-shadow: 8px 8px 8px #000;
+}
+#myhobby_container{
+    background-color: rgba(189, 89, 235, 0.3);
+    padding: 30px;
+    color: white;
+    font-size: 200%;
+    margin: 3rem;
+}
+.myhobby_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2vh;
+}
+.myhobby{
+    width: 100%;
+    margin: 3px;
+}
+.myhobby_name{
+    padding-bottom: 3vh;
+    text-align: center;
+}
+.myhobby_pic{
+    width: auto;
+    height: 20vh;
+    background-size: cover;
+    background-position: center 50%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #000;
+}
+#game{
+    background-image: url(../img/ez2dj.jpg);
+}
+#photo{
+    background-image: url(../img/photo.jpg);
+}
+#pcb{
+    background-image: url(../img/pcb.jpg);
+}
+#music{
+    background-image: url(../img/music.JPG)
+}
+#video{
+    background-image: url(../img/video.jpg);
+}
+#collect{
+    background-image: url(../img/collect.JPG);
+}
+
+/* Skill */
+#skill{
+    background-image: url(../img/25150003.JPG);
+}
+#skill_container{
+    background-color: rgba(230, 235, 89, 0.3);
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    text-shadow: 8px 8px 8px #000;
+}
+#myskill_container{
+    background-color: rgba(230, 235, 89, 0.3);
+    padding: 30px;
+    color: white;
+    font-size: 200%;
+    margin: 3rem;
+}
+.skills{
+    padding-bottom: 3vh;
+}
+.skills img{
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (min-width:1024px){
+    .inner{
+        max-width: 1024px;
+    }
+}
+
+/* 만점 받고 싶어요 쌤 */
